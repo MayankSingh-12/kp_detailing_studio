@@ -100,6 +100,20 @@
     });
   }
 
+  /* ---------- Reel mute toggles ---------- */
+  document.querySelectorAll('.reel-mute-btn').forEach(function (btn) {
+    var reel   = btn.closest('.reel-box');
+    var video  = reel.querySelector('video');
+    var iconOff = btn.querySelector('.icon-muted');
+    var iconOn  = btn.querySelector('.icon-unmuted');
+
+    btn.addEventListener('click', function () {
+      video.muted = !video.muted;
+      iconOff.style.display = video.muted ? 'block' : 'none';
+      iconOn.style.display  = video.muted ? 'none'  : 'block';
+    });
+  });
+
   /* ---------- Active nav link highlight on scroll ---------- */
   var sections = document.querySelectorAll('section[id]');
   var navLinkEls = document.querySelectorAll('.nav-link');
