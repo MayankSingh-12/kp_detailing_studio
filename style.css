@@ -500,10 +500,29 @@ img, video {
 }
 
 .service-icon {
-  font-size: 2.2rem;
-  display: block;
-  margin-bottom: 20px;
-  filter: saturate(1.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background: rgba(201,168,76,0.08);
+  border: 1px solid rgba(201,168,76,0.22);
+  margin-bottom: 24px;
+  color: var(--gold);
+  flex-shrink: 0;
+  transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.service-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.service-card:hover .service-icon {
+  background: rgba(201,168,76,0.15);
+  border-color: rgba(201,168,76,0.45);
+  box-shadow: 0 0 18px rgba(201,168,76,0.18);
 }
 
 .service-name {
@@ -522,37 +541,101 @@ img, video {
 }
 
 /* ======================================================
-   VIDEO SHOWCASE
+   VIDEO REELS SHOWCASE
    ====================================================== */
 .video-showcase {
   background: var(--bg);
 }
 
-.videos-top {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-bottom: 20px;
+.reels-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.video-box {
+.reel-wrapper {
+  flex: 0 0 auto;
+  width: calc(33.333% - 16px);
+  max-width: 320px;
+  min-width: 200px;
+}
+
+.reel-box {
+  position: relative;
   border: 2px solid var(--gold);
-  border-radius: var(--radius);
+  border-radius: 20px;
   overflow: hidden;
   background: #0a0a0a;
-  position: relative;
+  box-shadow: 0 0 24px rgba(201,168,76,0.12);
+  transition: box-shadow var(--transition), transform var(--transition);
 }
 
-.video-box video {
+.reel-box:hover {
+  box-shadow: 0 0 40px rgba(201,168,76,0.25);
+  transform: translateY(-5px);
+}
+
+.reel-box video {
   width: 100%;
   display: block;
-  aspect-ratio: 16/9;
+  aspect-ratio: 9/16;
   object-fit: cover;
   background: #0a0a0a;
 }
 
-.video-full {
-  width: 100%;
+.reel-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 14px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.reel-mute-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(5,5,5,0.75);
+  border: 1px solid rgba(201,168,76,0.5);
+  color: var(--gold);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition), border-color var(--transition);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  pointer-events: auto;
+  flex-shrink: 0;
+}
+
+.reel-mute-btn:hover {
+  background: rgba(201,168,76,0.2);
+  border-color: var(--gold);
+}
+
+.reel-mute-btn svg {
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+.reel-label {
+  text-align: center;
+  margin-top: 14px;
+  font-family: var(--ff-body);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-dim);
 }
 
 /* ======================================================
@@ -658,8 +741,28 @@ img, video {
 }
 
 .diff-icon {
-  font-size: 2.4rem;
-  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: rgba(201,168,76,0.08);
+  border: 1px solid rgba(201,168,76,0.22);
+  margin: 0 auto 20px;
+  color: var(--gold);
+  transition: background var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.diff-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.diff-box:hover .diff-icon {
+  background: rgba(201,168,76,0.15);
+  border-color: rgba(201,168,76,0.45);
+  box-shadow: 0 0 24px rgba(201,168,76,0.2);
 }
 
 .diff-title {
@@ -928,8 +1031,11 @@ img, video {
     grid-template-columns: 1fr;
   }
 
-  .videos-top {
-    grid-template-columns: 1fr;
+  .reels-container {
+    gap: 16px;
+  }
+  .reel-wrapper {
+    width: calc(50% - 8px);
   }
 
   .diff-grid {
@@ -958,5 +1064,9 @@ img, video {
   .hero-stats {
     gap: 24px;
     flex-wrap: wrap;
+  }
+  .reel-wrapper {
+    width: 100%;
+    max-width: 300px;
   }
 }

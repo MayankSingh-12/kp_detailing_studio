@@ -77,32 +77,65 @@
       </div>
       <div class="services-grid">
         <div class="service-card fade-in">
-          <span class="service-icon">🛡️</span>
+          <span class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L3 7v6c0 5.25 3.75 10.15 9 11.25C17.25 23.15 21 18.25 21 13V7L12 2z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+          </span>
           <h3 class="service-name">Ceramic Coating</h3>
           <p class="service-desc">Mirror-finish protection that lasts years. Bonds permanently to paint for lasting hydrophobic results.</p>
         </div>
         <div class="service-card fade-in">
-          <span class="service-icon">⚡</span>
+          <span class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <circle cx="12" cy="12" r="2"/>
+            </svg>
+          </span>
           <h3 class="service-name">Graphene Coating</h3>
           <p class="service-desc">Next-gen nano shield for ultimate defence. Superior heat resistance and anti-static properties.</p>
         </div>
         <div class="service-card fade-in">
-          <span class="service-icon">💎</span>
+          <span class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 3h12l4 6-10 13L2 9z"/>
+              <line x1="2" y1="9" x2="22" y2="9"/>
+              <line x1="12" y1="3" x2="6" y2="22"/>
+              <line x1="12" y1="3" x2="18" y2="22"/>
+            </svg>
+          </span>
           <h3 class="service-name">Borophene Coating</h3>
           <p class="service-desc">Ultra-hard molecular surface protection. The hardest known 2D material for your vehicle's paint.</p>
         </div>
         <div class="service-card fade-in">
-          <span class="service-icon">🎯</span>
+          <span class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </span>
           <h3 class="service-name">Paint Protection Film</h3>
           <p class="service-desc">Invisible armour against scratches &amp; chips. Self-healing TPU film that keeps your car flawless.</p>
         </div>
         <div class="service-card fade-in">
-          <span class="service-icon">🚿</span>
+          <span class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+            </svg>
+          </span>
           <h3 class="service-name">Car Wash &amp; Dry Clean</h3>
           <p class="service-desc">Spotless exterior, pristine interior. Deep-clean care for every surface inside and out.</p>
         </div>
         <div class="service-card fade-in">
-          <span class="service-icon">✨</span>
+          <span class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
+            </svg>
+          </span>
           <h3 class="service-name">Rubbing, Wax &amp; Accessories</h3>
           <p class="service-desc">Restore shine, enhance finish. Machine polishing and premium wax for a showroom-ready glow.</p>
         </div>
@@ -120,22 +153,64 @@
         <div class="gold-divider"></div>
         <p class="section-sub">Watch our expert team in action</p>
       </div>
-      <div class="videos-top fade-in">
-        <div class="video-box">
-          <video src="./videos/video1.mp4" controls poster="" preload="none">
-            Your browser does not support the video tag.
-          </video>
+      <div class="reels-container fade-in">
+        <div class="reel-wrapper">
+          <div class="reel-box">
+            <video src="./videos/video1.mp4" autoplay muted loop playsinline preload="auto"></video>
+            <div class="reel-overlay">
+              <button class="reel-mute-btn" aria-label="Toggle sound">
+                <svg class="icon-muted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>
+                </svg>
+                <svg class="icon-unmuted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <p class="reel-label">Reel 01</p>
         </div>
-        <div class="video-box">
-          <video src="./videos/video2.mp4" controls poster="" preload="none">
-            Your browser does not support the video tag.
-          </video>
+        <div class="reel-wrapper">
+          <div class="reel-box">
+            <video src="./videos/video2.mp4" autoplay muted loop playsinline preload="auto"></video>
+            <div class="reel-overlay">
+              <button class="reel-mute-btn" aria-label="Toggle sound">
+                <svg class="icon-muted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>
+                </svg>
+                <svg class="icon-unmuted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <p class="reel-label">Reel 02</p>
         </div>
-      </div>
-      <div class="video-box video-full fade-in">
-        <video src="./videos/video3.mp4" controls poster="" preload="none">
-          Your browser does not support the video tag.
-        </video>
+        <div class="reel-wrapper">
+          <div class="reel-box">
+            <video src="./videos/video3.mp4" autoplay muted loop playsinline preload="auto"></video>
+            <div class="reel-overlay">
+              <button class="reel-mute-btn" aria-label="Toggle sound">
+                <svg class="icon-muted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>
+                </svg>
+                <svg class="icon-unmuted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <p class="reel-label">Reel 03</p>
+        </div>
       </div>
     </div>
   </section>
@@ -194,22 +269,44 @@
       </div>
       <div class="diff-grid fade-in">
         <div class="diff-box">
-          <div class="diff-icon">🏆</div>
+          <div class="diff-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
           <h3 class="diff-title">Expert Team</h3>
           <p class="diff-desc">Trained detailing professionals with years of hands-on experience.</p>
         </div>
         <div class="diff-box">
-          <div class="diff-icon">⭐</div>
+          <div class="diff-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="6"/>
+              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+            </svg>
+          </div>
           <h3 class="diff-title">Premium Products</h3>
           <p class="diff-desc">Only internationally certified coatings and films trusted by the industry.</p>
         </div>
         <div class="diff-box">
-          <div class="diff-icon">📈</div>
+          <div class="diff-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+              <polyline points="17 6 23 6 23 12"/>
+            </svg>
+          </div>
           <h3 class="diff-title">Proven Results</h3>
           <p class="diff-desc">500+ satisfied customers and flawless finishes that speak for themselves.</p>
         </div>
         <div class="diff-box">
-          <div class="diff-icon">💰</div>
+          <div class="diff-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+              <line x1="7" y1="7" x2="7.01" y2="7"/>
+            </svg>
+          </div>
           <h3 class="diff-title">Honest Pricing</h3>
           <p class="diff-desc">Transparent quotes with no hidden charges. Quality that's worth every rupee.</p>
         </div>
